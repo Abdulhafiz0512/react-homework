@@ -1,15 +1,18 @@
-// App.js
 import React from 'react';
-import Card1 from './card';
-import Card2 from './card2';
+import TaskList from './components/tasklist.jsx';
+import './app.css'; 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Card1 />
-      <Card2 />
+      <header className="App-header">
+        <h1>Task Manager</h1>
+      </header>
+      <main>
+        <TaskList />
+      </main>
     </div>
   );
-}
+};
 
 export default App;
